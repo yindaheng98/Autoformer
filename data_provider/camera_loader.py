@@ -25,8 +25,8 @@ class CameraDataset(Dataset_Custom):
                 ts.append(t)
                 Ts.append(T)
                 quaternions.append(quaternion)
-        data = torch.concat((torch.tensor(Ts), torch.tensor(quaternions)), dim=-1)
-        data_stamp = time_features(pd.to_datetime(np.asarray(ts) * self.fps, unit=self.freq), freq=self.freq)
+        data = torch.concat((torch.tensor(Ts)/10, torch.tensor(quaternions)), dim=-1)
+        data_stamp = time_features(pd.to_datetime(np.asarray(ts) * self.fps, unit='s'), freq=self.freq)
         data_stamp = data_stamp.transpose(1, 0)
 
         self.data_x = data

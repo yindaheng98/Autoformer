@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from torch.utils.data import Dataset
 from sklearn.preprocessing import StandardScaler
-from utils.timefeatures import time_features
+from utils2.timefeatures import time_features
 import warnings
 
 warnings.filterwarnings('ignore')

@@ -4,7 +4,7 @@ import pandas as pd
 import torch
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-from utils.timefeatures import time_features
+from utils2.timefeatures import time_features
 from .data_loader import Dataset_Custom
 
 

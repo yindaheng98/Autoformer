@@ -6,8 +6,8 @@ logging.basicConfig(format='%(asctime)s,%(msecs)03d %(levelname)-8s [%(filename)
 from data_provider.data_factory import data_provider
 from exp.exp_basic import Exp_Basic
 from models import Informer, Autoformer, Transformer, Reformer
-from utils.tools import EarlyStopping, adjust_learning_rate, visual
-from utils.metrics import metric
+from utils2.tools import EarlyStopping, adjust_learning_rate, visual
+from utils2.metrics import metric
 
 import numpy as np
 import torch

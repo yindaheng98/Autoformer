@@ -13,7 +13,7 @@ init:
 
 get_dataset:
 	mkdir -p dataset/ && \
-		make run_module module="python -m utils.download_data" && \
+		make run_module module="python -m utils2.download_data" && \
 		unzip dataset/datasets.zip -d dataset/ && \
 		mv dataset/all_six_datasets/* dataset && \
 		rm -r dataset/all_six_datasets dataset/__MACOSX 

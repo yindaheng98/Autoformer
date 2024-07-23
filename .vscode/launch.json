@@ -22,7 +22,7 @@
                 "--model",
                 "Autoformer",
                 "--data",
-                "custom",
+                "camera",
                 "--features",
                 "M",
                 "--seq_len",
